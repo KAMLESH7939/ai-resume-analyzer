@@ -20,7 +20,7 @@
 
 html,
 body {
-    @apply bg-black;
+    @apply bg-white;
 }
 
 main {
@@ -85,7 +85,7 @@ form {
     }
 
     .resume-card {
-        @apply flex flex-col gap-8 h-[560px] w-[350px] lg:w-[430px] xl:w-[490px] bg-white rounded-2xl p-4;
+        @apply flex flex-col gap-8 h-[560px] w-[350px] lg:w-[430px] xl:w-[450px] bg-white rounded-2xl p-4;
     }
 
     .resume-card-header {
