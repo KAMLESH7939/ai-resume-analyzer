@@ -27,8 +27,6 @@ const Upload = () => {
 
     setStatusText('Converting to image...');
     const imageFile = await convertPdfToImage(file);
-    console.error("PDF to image conversion failed", imageFile);
-
     if(!imageFile.file) return setStatusText('Error: Failed to convert PDF to image');
 
     setStatusText('Uploading the image...');
@@ -62,7 +60,7 @@ const Upload = () => {
     await kv.set(`resume:${uuid}`, JSON.stringify(data));
     setStatusText('Analysis complete, redirecting...');
     console.log(data);
-    // navigate(`/resume/${uuid}`);
+    navigate(`/resume/${uuid}`);
   }
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -90,7 +88,7 @@ const Upload = () => {
           {isProcessing ? (
             <>
               <h2>{statusText}</h2>
-              <img src="/images/resume-scan.gif" className="w-full"  alt='no'/>
+              <img src="/images/resume-scan.gif" className="w-full" />
             </>
           ) : (
             <h2>Drop your resume for an ATS score and improvement tips</h2>
