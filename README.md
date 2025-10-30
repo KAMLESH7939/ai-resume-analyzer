@@ -1,7 +1,7 @@
 # RESUMIND - AI POWERED RESUME ANALYZER
 
 
-[![LIVE LINK](https://puter.com/app/jsm-ai-resume-analyzer-23)
+[![LIVE LINK](https://www.svgrepo.com/show/84694/link-on-internet.svg)(https://puter.com/app/jsm-ai-resume-analyzer-23)
 
 ## Features
 
